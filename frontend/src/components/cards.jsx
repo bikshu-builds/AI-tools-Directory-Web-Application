@@ -32,7 +32,7 @@ function Cards() {
 
     const handleCardClick = async (categoryName) => {
         try {
-            const res = await axios.get(`https://ai-tools-directory-web-application.onrender.com/get-data/${categoryName}`);
+            const res = await axios.get(`https://ai-tools-directory-web.onrender.com/get-data/${categoryName}`);
             setData(res.data);
             setCategory(categoryName);
             navigate('/cat');
