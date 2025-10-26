@@ -7,7 +7,7 @@ function ApisFeatures() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://ai-tools-directory-web-application.onrender.com/apis')
+    axios.get('https://ai-tools-directory-web.onrender.com/apis')
       .then((res) => {
         setApis(res.data);
         setLoading(false);
