@@ -15,7 +15,7 @@ export default function Chatbot() {
     setMessages((prev) => [...prev, userMessage, thinkingMessage]);
 
     try {
-      const response = await axios.post('https://ai-tools-directory-web-application.onrender.com/chatbot', {
+      const response = await axios.post('https://ai-tools-directory-web.onrender.com/chatbot', {
         message: input,
       });
       const botMessage = { sender: 'bot', text: response.data.reply };
