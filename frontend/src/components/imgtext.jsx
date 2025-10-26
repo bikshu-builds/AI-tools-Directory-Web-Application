@@ -20,7 +20,7 @@ function ImgText() {
           <img
             className="object-cover object-center rounded mx-auto"
             alt="hero"
-            src="/Flat_Land_Clipart_Transparent_Background__Modern_Flat_Design_Concept_Of_Social_Media_Marketing_Can_Use_For_Business_Content_Strategy_Analysis_Mobile_App_Landing_Page_Web_Design_Template_Flat_Vector_Il.png"
+            src="/fine.png"
           />
         </div>
       </div>
