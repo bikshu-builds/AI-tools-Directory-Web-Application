@@ -18,14 +18,14 @@ function CompareTools() {
   const [toolData, setToolData] = useState([]);
 
   const fetchTools = (category, setTools) => {
-    axios.get(`https://ai-tools-directory-web-application.onrender.com/tools/${category}`)
+    axios.get(`https://ai-tools-directory-web.onrender.com/tools/${category}`)
       .then(res => setTools(res.data))
       .catch(err => console.error(err));
   };
 
   const handleCompare = () => {
     if (selectedTool1 && selectedTool2 && selectedCategory1 && selectedCategory2) {
-      axios.get('https://ai-tools-directory-web-application.onrender.com/compare', {
+      axios.get('https://ai-tools-directory-web.onrender.com/compare', {
         params: {
           tool1: selectedTool1,
           tool2: selectedTool2,
